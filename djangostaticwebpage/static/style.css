@@ -1,3 +1,50 @@
-html{
-	background-color: teal;
+.carousel {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+}
+
+.carousel .carousel-inner, .carousel .carousel-item {
+    width: 100%;
+    height: 100%;
+    opacity: 80%
+}
+
+.carousel-item img {
+    width: 100vw;
+ 	height: 80vh;
+ 	object-fit: cover;
+ 	object-position: 50% 50%;
+}
+
+.carousel-content {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.8);
+  width: 50vw;
+  font-size: 2rem;
+}
+
+#aboutcompany{
+	font-size: 1em;
+}
+
+
+#liststyle{
+	font-size: 1em;
+}
+
+@media (max-width: 1200px){
+	.carousel-content{
+		font-size: 1.45em;
+	}
+}
+
+@media (max-width: 600px){
+	.carousel-content{
+		font-size: 1.1em;
+	}
 }
