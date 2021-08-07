@@ -19,4 +19,8 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('homepageapp.urls')),
+    path('home/', include('homepageapp.urls')),
+    path('printer1/', include('printer1.urls')),
+    path('printer2/', include('printer2.urls')),
+    path('printer3/', include('printer3.urls')),
 ]

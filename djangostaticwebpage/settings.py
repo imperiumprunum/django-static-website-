@@ -39,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'homepageapp',
-]
+    'printer1',
+    'printer2',
+    'printer3',
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

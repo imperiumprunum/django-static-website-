@@ -30,11 +30,11 @@
   		</button>
 
 		<div class="collapse navbar-collapse" id="navbarToggler">
-			<ul class="navbar-nav ml-auto pr-5">
-				<li class="nav-item"><a href="home" class="nav-link">Home</a></li>
-				<li class="nav-item"><a href="printer1" class="nav-link">Printer 1</a></li>
-				<li class="nav-item"><a href="printer2" class="nav-link">Printer 2</a></li>
-				<li class="nav-item"><a href="printer3" class="nav-link">Printer 3</a></li>
+			<ul class="navbar-nav ml-auto pr-5" id="navbar-list">
+				<li class="nav-item"><a href="/home" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="/printer1" class="nav-link">Printer 1</a></li>
+				<li class="nav-item"><a href="/printer2" class="nav-link">Printer 2</a></li>
+				<li class="nav-item"><a href="/printer3" class="nav-link">Printer 3</a></li>
 			</ul>
 		</div>
 
@@ -142,6 +142,7 @@
 		</div>
 	</div>
 </footer>
+{% block javascriptblock %}{% endblock javascriptblock %}
 
 </body>
 </html>
