@@ -1,18 +1,39 @@
 {% extends 'base.html' %}
+{% block pagetitle %} Product printer 3 {% endblock pagetitle %}
+
+{% block content %}
+{% load static %}
+<div class="cointainer-fluid">
+  <div class="row">
+    <div class="col-xl-1"></div>
+    <div class="col-xl-7 col-md-6 col-sm-12">
+      <h2 class="display-4 mt-2">Printer 3</h2>
+      <p class="lead mt-2 p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo minus blanditiis accusantium, explicabo, reprehenderit voluptas voluptatum ipsa rem quisquam sit, cupiditate similique ipsam tempore rerum voluptatibus aperiam sed, illum. Incidunt.
+      Doloremque officia perferendis recusandae dolorem veritatis non rerum provident cum nisi eius est obcaecati dolore, aliquid explicabo omnis soluta corrupti a aperiam eos eveniet itaque tenetur perspiciatis delectus consequatur? Minus.
+      Sint aperiam eligendi velit vel sequi laboriosam, consequuntur, corrupti voluptate possimus voluptatem pariatur natus animi, amet eos distinctio fugiat labore minus necessitatibus accusamus id molestias officia cum. Laudantium, aspernatur, vitae.
+      Animi asperiores repellendus eligendi itaque sint voluptas neque natus sed est numquam dicta sit facilis non magnam necessitatibus voluptate praesentium molestias ad, possimus. Recusandae cumque ducimus ratione, temporibus sequi eos?
+      Tempora quam voluptate veritatis repellat, excepturi. Debitis quos sapiente corporis praesentium fugiat nemo voluptatibus provident ratione numquam temporibus saepe quae expedita dolores ipsam, harum nisi assumenda odit totam doloribus enim!</p>
+    </div>
+    <div class="col-xl-4 col-md-6 col-sm-12">
+      <img src="{% static "img/pr_3.jpg" %}" alt="printer1" class="img-fluid">
+    </div>
+  </div>  
+</div>
+
+
+{% endblock content %}
+
 
 
 {% block javascriptblock %}
 <script type="text/javascript">
-  const targetNav = "Home";
+  const targetNav = "Printer 3";
   let targetElement = document.querySelector("#navbar-list");
 
   for(let i = 0; i < targetElement.children.length; i++){
   	if (targetElement.children[i].innerText == targetNav){
   		let classes = targetElement.children[i].classList;
   		classes.add("active");
-  		//console.log(targetElement.children[i])
-  		//console.log(typeof targetElement.children[i])
-  		//console.log(targetElement.children[i].classList)
   	}
   }
 

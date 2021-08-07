@@ -1,18 +1,40 @@
 {% extends 'base.html' %}
+{% block pagetitle %} Product printer 2 {% endblock pagetitle %}
+
+{% block content %}
+{% load static %}
+<div class="cointainer-fluid">
+  <div class="row">
+    <div class="col-xl-1"></div>
+    <div class="col-xl-7 col-md-6 col-sm-12">
+      <h2 class="display-4 mt-2">Printer 2</h2>
+      <p class="lead mt-2 p2">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Nobis unde vel ad, quae debitis natus explicabo rerum sint optio quos, ex quam nihil deserunt dolor omnis reiciendis cumque repudiandae, quo.
+      Maxime, ratione repellat corporis alias optio ut quam, reiciendis! Ex aut ullam fuga perferendis omnis tempora, aperiam eum iste perspiciatis sit possimus nostrum delectus blanditiis, fugit facere expedita quos dolorum?
+      Perferendis incidunt eaque, dolores deleniti sed consequatur architecto delectus mollitia nostrum? Nisi delectus aspernatur incidunt autem ipsa tenetur, asperiores dolore placeat quidem enim ea non dolores at eum cum. Iure.
+      Magni, animi in ipsa, pariatur nam, suscipit assumenda voluptas praesentium rerum est minima tempore. Reiciendis dolorum necessitatibus, distinctio? Cumque dolorem voluptates commodi ullam pariatur incidunt aliquam iure, optio voluptatem maxime.
+      Reprehenderit, molestiae, quia soluta, aliquid ut odit omnis ipsum minus consequatur corrupti debitis in tempore inventore. Hic facilis magnam quam, iste molestiae sed delectus quas, minus quasi ipsum exercitationem accusamus.
+      Ad velit nam voluptatum itaque vero quidem asperiores ab necessitatibus eos assumenda magnam reprehenderit neque, libero illo hic aut sapiente inventore aliquid? Ducimus suscipit incidunt optio, minima. Voluptas, asperiores, suscipit?</p>
+    </div>
+    <div class="col-xl-4 col-md-6 col-sm-12">
+      <img src="{% static "img/pr_2.jpg" %}" alt="printer1" class="img-fluid">
+    </div>
+  </div>  
+</div>
+
+
+{% endblock content %}
+
 
 
 {% block javascriptblock %}
 <script type="text/javascript">
-  const targetNav = "Home";
+  const targetNav = "Printer 2";
   let targetElement = document.querySelector("#navbar-list");
 
   for(let i = 0; i < targetElement.children.length; i++){
   	if (targetElement.children[i].innerText == targetNav){
   		let classes = targetElement.children[i].classList;
   		classes.add("active");
-  		//console.log(targetElement.children[i])
-  		//console.log(typeof targetElement.children[i])
-  		//console.log(targetElement.children[i].classList)
   	}
   }
 
