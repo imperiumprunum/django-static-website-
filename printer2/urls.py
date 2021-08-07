@@ -1,7 +1,6 @@
 from django.urls import path
-from homepageapp import views
+from printer2 import views
 
 urlpatterns = [
-	path('', views.render_home_page),
-	path('home/', views.render_home_page)
+	path('printer2', views.render_printer2),
 ]
